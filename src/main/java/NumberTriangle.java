@@ -120,6 +120,7 @@ public class NumberTriangle {
         // open the file and get a BufferedReader object whose methods
         // are more convenient to work with when reading the file contents.
         InputStream inputStream = NumberTriangle.class.getClassLoader().getResourceAsStream(fname);
+
         BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
         List<NumberTriangle> prevRow = null;
 
