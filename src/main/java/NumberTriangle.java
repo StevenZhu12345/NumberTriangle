@@ -133,6 +133,11 @@ public class NumberTriangle {
 
         String line = br.readLine();
         while (line != null) {
+            String trimmed = line.trim();
+            if (trimmed.isEmpty()) {
+                continue;  // skip blank lines
+            }
+
 
             String[] parts = line.split("\\s+");
             List<NumberTriangle> currRow = new ArrayList<>(parts.length);
